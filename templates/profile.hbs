@@ -1,0 +1,118 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card h2 {
+            margin: 0;
+            color: #333;
+        }
+
+        .card h4 {
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .profile-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .profile-details strong {
+            color: #333;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Hello, {{username}}!</h2>
+            <h4>Your Profile Details</h4>
+            <div class="profile-details">
+                <p><strong>Email:</strong> {{email}}</p>
+                <p><strong>Age:</strong> {{age}}</p>
+                <p><strong>Gender:</strong> {{gender}}</p>
+                <p><strong>Date of Birth:</strong> {{dob}}</p>
+                <!-- Add more profile details as needed 
+            </div>
+            <button class="btn btn-primary" id="updateProfileBtn">Update Profile</button>
+        </div>
+    </div>
+
+    <script>
+        // Update profile button click event (redirect to update profile page)
+        const updateProfileBtn = document.getElementById("updateProfileBtn");
+        updateProfileBtn.addEventListener("click", () => {
+            // Redirect to update profile page
+            window.location.href = "/update-profile"; // Replace with your actual update profile page URL
+        });
+    </script>
+</body>
+
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>Welcome to Your Profile Page</h1>
+    <p>Name: {{ user.name }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Age: {{ user.age }}</p>
+    <p>Gender: {{ user.gender }}</p>
+    <p>Date of Birth: {{ user.dob }}</p>
+    <!-- Additional profile details as needed -->
+    <a href="/update-profile">Update Profile</a> <!-- Link to update profile page -->
+</body>
+
+</html>
+
+

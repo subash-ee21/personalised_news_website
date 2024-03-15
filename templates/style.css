@@ -1,0 +1,310 @@
+
+#chat-container {
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#chat-messages {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.user-message {
+    text-align: right;
+    margin-bottom: 8px;
+}
+
+.chatbot-message {
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .news-card {
+             position: relative; 
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%; /* Let the height expand based on content */
+            box-sizing: border-box;
+            text-align: center; /* Center-align text content */
+            background-color: #ffffff; /* Add a white background */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+
+        .news-card img {
+            max-height: 150px;
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .news-card h5 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .news-card p {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            flex-grow: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .news-card .btn-primary {
+            margin-top: auto;
+        }
+
+        .profile-icon {
+            max-height: 30px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+       /* .news-card:hover {
+    transform: scale(1.05);
+   
+    transition: transform 0.3s ease;
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    /* Add a subtle shadow */
+
+
+      /* @keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}*/
+
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .dark-mode-btn,
+        .light-mode-btn {
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .dark-mode .news-card {
+    background-color: #333; /* Darker background color for dark mode */
+    color: #fff; /* Light text color for dark mode */
+    border-color: #555; /* Darker border color for dark mode */
+}
+
+.dark-mode .news-card img {
+    filter: brightness(70%); /* Adjust image brightness in dark mode */
+}
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            /* Ensure the container takes up at least the full viewport height */
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 -10px;
+            /* Remove default margin and add negative margin to compensate for column margins */
+        }
+
+        /* Style for the categories button and line */
+        .categories-line {
+            width: 100%;
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
+        .categories-dropdown {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .categories-button {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .navbar-custom .nav-link {
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: #ffc107;
+        }
+
+        .navbar-custom .navbar-brand {
+            font-size: 1.5rem;
+            color: #ffc107;
+            font-weight: bold;
+        }
+       
+
+        .bookmark-icon {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 1.5rem;
+             /* Default color for unbookmarked */
+            cursor: pointer;
+        }
+        /* Additional CSS for enhancing webpage appearance */
+
+/* Update the background color of the body */
+body {
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Style the navigation bar */
+.navbar-custom {
+    background-color: #343a40; /* Dark gray background */
+    padding: 10px 0;
+}
+
+/* Update navbar link colors */
+.navbar-custom .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffc107; /* Yellow color on hover */
+}
+
+/* Style the logo */
+.navbar-custom .navbar-brand {
+    font-size: 1.5rem;
+    color: #ffc107;
+    font-weight: bold;
+}
+
+/* Update the search button color */
+#searchBtn {
+    background-color: #ffc107; /* Yellow color */
+    border-color: #ffc107;
+    color: #343a40; /* Dark gray text color */
+    transition: background-color 0.3s ease;
+}
+
+#searchBtn:hover {
+    background-color: #ffca3a; /* Slightly lighter yellow color on hover */
+}
+
+/* Style the chatbot container */
+.chatbot-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style the chatbot messages */
+.chat-message {
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.user-message {
+    background-color: #ffc107; /* Yellow background for user messages */
+    color: #343a40; /* Dark gray text color */
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #e0e0e0; /* Light gray background for bot messages */
+    color: #343a40; /* Dark gray text color */
+    align-self: flex-start;
+}
+
+/* Style the chat input box */
+.chat-input {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 0.9rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.chat-input:focus {
+    outline: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on focus */
+}
+
+/* Style the chat button */
+.send-btn {
+    background-color: #ffc107; /* Yellow color */
+    border-color: #ffc107;
+    color: #343a40; /* Dark gray text color */
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+    background-color: #ffca3a; /* Slightly lighter yellow color on hover */
+}
+
+/* Style the chatbot tab in the navbar */
+.navbar-custom .chatbot-tab {
+    background-color: #ffc107;
+    color: #343a40;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-custom .chatbot-tab:hover {
+    background-color: #ffca3a; /* Slightly lighter yellow color on hover */
+}

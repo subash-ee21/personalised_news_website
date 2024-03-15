@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/styles.css"> <!-- Link to your styles.css file -->
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+box-sizing: border-box;
+}
+
+body{
+margin: 0;
+font-family: poppins, Arial, Helvetica, sans-serif;
+font-size: 16px;
+font-weight: 400;
+color: #666666;
+background: #eaeff4;
+}
+
+.wrapper{
+margin: 0 auto;
+width: 100%;
+max-width: 1140px;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.container{
+position: relative;
+width: 100%;
+max-width: 600px;
+height: auto;
+display: flex;
+background: #ffffff;
+box-shadow: 0 0 5px #999999;
+}
+
+
+
+.login .col-left,
+.login .col-right{
+padding: 30px;
+display: flex;
+}
+
+
+.login .col-left{
+    width: 60%;
+    clip-path: polygon(0 0, 0% 100%, 100% 0 );
+    background: #050505;
+    }
+
+    .login .col-right{
+    padding: 60px 30px;
+    width: 50%;
+    margin-left: -10%;
+    }
+    
+    
+    @media(max-width: 575px){
+        .login .container{
+        flex-direction: column;
+        box-shadow: none;
+        }
+        .login .col-left,
+        .login .col-right{
+        width: 100%;
+        margin: 0;
+        clip-path: none;
+        }
+        .login .col-right{
+        padding: 30px;
+        }
+        
+        }
+
+        
+        .login .login-text{
+        position: relative;
+        width: 100%;
+        color: #ffffff;
+        }
+
+        .login .login-text h2{
+        margin: 0 0 15px 0;
+        font-size: 30px;
+        font-weight: 700;
+        }
+
+        .login .login-text p{
+        margin: 0 0 20px 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        }
+        
+        .login .login-text .btn{
+        display: inline-block;
+        font-family: poppins;
+        padding: 7px 20px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        border-radius: 30px;
+        color: #ffffff;
+        outline: none;
+        border: 1px solid #ffffff;
+        box-shadow: inset 0 0 0 0 #ffffff;
+        transition: .3s;
+        }
+        
+        .login .login-text .btn:hover{
+        color: #060b08;
+        box-shadow: inset 150px 0 0 0 #ffffff;
+        }
+        
+        .login .login-form{
+        position: relative;
+        width: 100%;
+        }
+        .login .login-form h2{
+        margin: 0 0 15px 0;
+        font-size: 22px;
+        font-weight: 700;
+        }
+        .login .login-form p{
+        margin: 0 0 10px 0;
+        text-align: left;
+        color: #666666;
+        font-size: 15px;
+        }
+        .login .login-form p:last-child{
+        margin: 0;
+        padding-top: 3px;
+        }
+        .login .login-form p a{
+        color: #040806;
+        font-size: 14px;
+        text-decoration: none;
+        }
+        .login .login-form label {
+        display: block;
+        width: 100%;
+        margin-bottom: 2px;
+        letter-spacing: .5px;
+        }
+        .login .login-form p:last-child label{
+        width: 60%;
+        float: left;
+        }
+        .login .login-form label span{
+        color: #ff574e;
+        padding-left: 2px;
+        }
+        .login .login-form input{
+        display: block;
+        width: 100%;
+        height: 35px;
+        padding: 0 10px;
+        outline: none;
+        border: 1px solid #cccccc;
+        border-radius: 30px;
+        }
+        .login .login-form input:focus{
+        border-color: #ff574e;
+        }
+        .login .login-form button,
+        .login .login-form input[type=submit] {
+        display: inline-block;
+        width: 100%;
+        margin-top: 5px;
+        color: #277aa6;
+        font-size: 16px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid #0f0aa7;
+        border-radius: 30px;
+        box-shadow: inset 0 0 0 0 #0c0c0c;
+        transition: .3s;
+        }
+        .login .login-form button:hover,
+        .login .login-form input[type=submit]:hover{
+        color: #ffffff;
+        box-shadow: inset 250px 0 0 0 #080808;
+        }
+
+        /* ... Your existing CSS rules ... */
+.login .login-form label {
+            display: block;
+            width: 100%;
+            margin-bottom: 2px;
+            letter-spacing: .5px;
+        }
+
+        /* Adjust the radio button size */
+        .login .login-form input[type="radio"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        /* Style the checked radio button */
+        .login .login-form input[type="radio"]:checked {
+            background-color: #0c100e;
+            border-color: #0a0b0a;
+        }
+
+/* ... The rest of your CSS rules ... */
+.navbar {
+        background-color: #000000;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar h1 {
+        margin: 0;
+    }
+
+</style>
+<body>
+    <div class="navbar">
+        <h1>EXPRESS DISPATCH</h1>
+    </div>
+    <div class="wrapper">
+        <div class="container login">
+            <div class="col-left">
+                <div class="login-text">
+                    <h2>Signup</h2>
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="login-form">
+                    <h2>Signup Form</h2>
+                    <form action="/signup" method="post" onsubmit="return validateForm();">
+                        <input type="text" name="name" placeholder="Name" class="input-field"><br>
+                        <input type="email" name="email" placeholder="Email" class="input-field"><br>
+                        <input type="password" name="password" placeholder="Password" class="input-field" id="password"><br>
+                        <div id="passwordError" class="error-message"></div>
+                        <input type="number" name="age" placeholder="Age" class="input-field" id="age"><br>
+                        <div id="ageError" class="error-message"></div>
+                        <div class="gender-container">
+    <!-- Replace the existing radio button inputs with this code -->
+<div class="gender-container">
+    <label for="gender">Gender:</label>
+    <div class="radio-option">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+    </div>
+    <div class="radio-option">
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </div>
+</div>
+
+    
+                        <br>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" name="dob" class="input-field" id="dob">
+                        <div id="dobError" class="error-message"></div>
+                        <input type="submit" value="Signup" class="submit-btn">
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+<script>
+        function validateForm() {
+            const ageInput = document.getElementById('age');
+            const dobInput = document.getElementById('dob');
+            const ageError = document.getElementById('ageError');
+            const dobError = document.getElementById('dobError');
+            const passwordInput = document.getElementById('password');
+            const passwordError = document.getElementById('passwordError');
+
+            // Clear existing error messages
+            ageError.innerHTML = '';
+            dobError.innerHTML = '';
+            passwordError.innerHTML = '';
+
+            // Validate age (between 1 and 99)
+            const ageValue = parseInt(ageInput.value);
+            if (ageValue < 1 || ageValue > 99) {
+                ageError.innerHTML = '*Age must be between 1 and 99*';                            
+                ageError.style.color = 'red'; // Set the error message color to red
+
+                return false;
+            }
+
+            // Validate date of birth (not after today)
+            const dobValue = new Date(dobInput.value);
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            if (dobValue > today) {
+                dobError.innerHTML = '*Date of Birth cannot be after today*';
+                                            dobError.style.color = 'red'; // Set the error message color to red
+
+                return false;
+            }
+
+            // Check password complexity
+            const password = passwordInput.value;
+            const uppercaseRegex = /[A-Z]/;
+            const digitRegex = /[0-9]/;
+            const specialCharRegex = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/;
+            if (!uppercaseRegex.test(password) || !digitRegex.test(password) || !specialCharRegex.test(password)) {
+                passwordError.innerHTML = '*Password must include at least one uppercase letter, one digit, and one special character*';
+                            passwordError.style.color = 'red'; // Set the error message color to red
+
+                return false;
+            }
+
+            return true; // Submit the form if validation passes
+        }
+    </script>
+</body>
+</html>
+
+
+
+
